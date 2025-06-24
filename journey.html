@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Journey - UPSA</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="virtual-tour.html">Tours</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="journey.html">The Journey</a>
+    </nav>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <h1>The Journey</h1>
+        <p>Click on any point on the map below to explore your journey through UPSA.</p>
+
+        <div class="map-container">
+            <img src="assets/journey/map.jpg" alt="UPSA Map" class="map-image">
+            <div class="map-marker" onclick="loadJourney('1.jpg')" title="Checkpoint 1"></div>
+            <div class="map-marker" onclick="loadJourney('2.jpg')" title="Checkpoint 2 "></div>
+            <div class="map-marker" onclick="loadJourney('3.jpg')" title="Checkpoint 3"></div>
+            <div class="map-marker" onclick="loadJourney('4.jpg')" title="Checkpoint 4"></div>
+            <div class="map-marker" onclick="loadJourney('5.jpg')" title="Checkpoint 5"></div>
+            <div class="map-marker" onclick="loadJourney('6.jpg')" title="Checkpoint 6"></div>
+            <div class="map-marker" onclick="loadJourney('7.jpg')" title="Checkpoint 7"></div>
+            <div class="map-marker" onclick="loadJourney('8.jpg')" title="Junction 3"></div>
+            <div class="map-marker" onclick="loadJourney('9.jpg')" title="Checkpoint 8"></div>
+            <div class="map-marker" onclick="loadJourney('10.jpg')" title="Junction 4"></div>
+            <div class="map-marker" onclick="loadJourney('11.jpg')" title="Junction 1"></div>
+            <div class="map-marker" onclick="loadJourney('12.jpg')" title="Twelveth Pace"></div>
+            <div class="map-marker" onclick="loadJourney('13.jpg')" title="Junction 2"></div>
+            <div class="map-marker" onclick="loadJourney('14.jpg')" title="Checkpoint 9"></div>  
+        </div>
+
+        <div class="journey-display">
+            <img id="journey-image" src="assets/journey/entrance.jpg" alt="Journey View">
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 University of Professional Studies, Accra. All rights reserved.</p>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>

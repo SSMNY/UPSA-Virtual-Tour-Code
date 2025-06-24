@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UPSA Virtual Tour</title>
+<!-- Pannellum.js for 360° Viewer -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum/build/pannellum.css">
+<script src="https://cdn.jsdelivr.net/npm/pannellum/build/pannellum.js"></script>
+<link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="virtual-tour.html">Tours</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="journey.html">The Journey</a>
+    </nav>
+    
+
+    <!-- Virtual Tour Section -->
+    <section class="container slide-in-left">
+        <h1>Catch a glimpse of what UPSA has to offer</h1>
+        <div class="tour-options">
+            <button class="btn" onclick="showSection('image-gallery')">Image Gallery</button>
+        </div>
+    </section>
+
+    
+      <!-- Image Gallery Slideshow -->
+<section id="image-gallery" class="container fade-in tour-section" style="display: none;">
+    <h2>Slideshow Experience</h2>
+    
+    <div class="slideshow-container">
+        <img class="gallery-slide" src="assets/img1.jpg" alt="WELCOME">
+        <img class="gallery-slide" src="assets/img2.jpg" alt="UPSA Area 2">
+        <img class="gallery-slide" src="assets/img3.jpg" alt="UPSA Area 3">
+        <img class="gallery-slide" src="assets/img4.jpg" alt="UPSA Area 4">
+        <img class="gallery-slide" src="assets/img5.jpg" alt="UPSA Area 5">
+        <img class="gallery-slide" src="assets/img6.jpg" alt="UPSA Area 6">
+        <img class="gallery-slide" src="assets/img7.jpg" alt="UPSA Area 7">
+        <img class="gallery-slide" src="assets/img8.jpg" alt="UPSA Area 8">
+        <img class="gallery-slide" src="assets/img9.jpg" alt="UPSA Area 9">
+        <img class="gallery-slide" src="assets/img10.jpg" alt="UPSA Area 10">
+        <img class="gallery-slide" src="assets/img11.jpg" alt="UPSA Area 11">
+        <img class="gallery-slide" src="assets/img12.jpg" alt="UPSA Area 12">
+        <img class="gallery-slide" src="assets/img13.jpg" alt="UPSA Area 13">
+        <img class="gallery-slide" src="assets/img14.jpg" alt="UPSA Area 14">
+        <img class="gallery-slide" src="assets/img15.jpg" alt="UPSA Area 15">
+        <img class="gallery-slide" src="assets/img16.jpg" alt="UPSA Area 16">
+        <img class="gallery-slide" src="assets/img17.jpg" alt="UPSA Area 17">
+        <img class="gallery-slide" src="assets/img18.jpg" alt="UPSA Area 18">
+        <img class="gallery-slide" src="assets/img19.jpg" alt="UPSA Area 19">
+        <img class="gallery-slide" src="assets/img20.jpg" alt="UPSA Area 20">
+        <img class="gallery-slide" src="assets/img21.jpg" alt="UPSA Area 21">
+        <img class="gallery-slide" src="assets/img22.jpg" alt="UPSA Area 22">
+        <!-- Slideshow Arrows -->
+        <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+        <button class="next" onclick="plusSlides(1)">&#10095;</button>
+    </div>
+</section>
+
+<!-- 360° Viewer Container (Initially Shows Welcome Message) -->
+<div id="panorama-container" class="virtual-tour-container">
+    <div id="panorama">
+        <p id="welcome-message" class="welcome-text">Click a location below to start your 360° tour of UPSA!</p>
+    </div>
+    <button id="prev-360" class="nav-360" onclick="changePanorama(-1)">&#10094; Previous</button>
+    <button id="next-360" class="nav-360" onclick="changePanorama(1)">Next &#10095;</button>
+</div>
+
+
+<!-- Tour Navigation (10 buttons) -->
+<section id="tour-navigation" class="container slide-in-left">
+    <h2>Experience 360-Virtual Reality</h2>
+    <p>Click a location to explore:</p>
+
+    <div class="tour-grid">
+        <button class="btn tour-btn" onclick="loadLocation('parking-lot')">🚗 Parking Lot</button>
+        <button class="btn tour-btn" onclick="loadLocation('library')">📚 Library</button>
+        <button class="btn tour-btn" onclick="loadLocation('lecture-hall')">🏫 Lecture Hall/ Hall Intersection</button>
+        <button class="btn tour-btn" onclick="loadLocation('hostel')">🏠 Hostel</button>
+        <button class="btn tour-btn" onclick="loadLocation('sports-complex')">⚽ Sports Complex</button>
+        <button class="btn tour-btn" onclick="loadLocation('cafeteria')">🍽️ Cafeteria</button>
+        <button class="btn tour-btn" onclick="loadLocation('administration')">🏛️ Administration</button>
+        <button class="btn tour-btn" onclick="loadLocation('auditorium')">🎤 Auditorium</button>
+        <button class="btn tour-btn" onclick="loadLocation('faculty-block')">🏢 Faculty Block & Foutain Lounge</button>
+        <button class="btn tour-btn" onclick="loadLocation('entrance-gate')">🚪 Main Entrance</button>
+    </div>
+</section>
+
+<!-- Footer -->
+    <footer>
+        <p>&copy; 2025 University of Professional Studies, Accra. All rights reserved.</p>
+    </footer>
+    <script defer src="js/scripts.js"></script>
+</body>
+
+</html>
+>
