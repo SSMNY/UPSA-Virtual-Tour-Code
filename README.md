@@ -15,3 +15,8 @@ Technologies Used
 How to Run
 1. Download the repository.
 2. Open a terminal and run a local server (e.g., Python):
+
+Contributors
+- Caleb Djabatey
+- Daniel Effah
+- Matthew Ofori 
